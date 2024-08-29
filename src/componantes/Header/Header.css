@@ -1,0 +1,54 @@
+div .line .left-side {
+
+    position: absolute;
+    top: 1.5%;
+    left: 10%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div .line .left-side div {
+    font-size: 1.1rem;
+    color: rgb(84, 83, 83);
+
+
+}
+
+div .line .left-side i {
+    color: #f35525;
+    padding: 1px 13px;
+    font-size: 1.5rem;
+
+}
+
+div .line .right-side {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 1.5%;
+    right: 10%;
+
+
+}
+
+div .line .right-side i {
+    color: #f35525;
+    padding-inline: 10px;
+    font-size: 2rem;
+
+}
+
+hr {
+    width: 98%;
+    margin-top: 60px;
+
+}
+
+@media screen and (max-width:992px) {
+    div .line {
+        display: none;
+        transition: 5s ease-in-out;
+    }
+}

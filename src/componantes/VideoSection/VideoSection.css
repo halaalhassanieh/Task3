@@ -1,0 +1,127 @@
+section .VideoSection{
+    margin: auto;
+    
+
+}
+section.VideoSection .background {
+background: url(../../assets/img.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+width: 98%;
+height: 70vh;
+border-radius: 20px;
+padding: 10px;
+margin: auto;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+
+
+}
+
+section.VideoSection .background .headContainer{
+width: 25%;
+padding-top: 100px;
+
+}
+
+.video-frame {
+    position: relative;
+    width: 60%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    z-index: 2;
+}
+.video-frame img{
+    
+    position: absolute;
+    left: 33%;
+    transform: translateY(-40%);
+    border-radius: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+ .video-frame a{
+    position: absolute;
+    left: 80%;
+    top: 80%;
+    transform: translate(-10%,80%);
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 56px;
+    color: #f35525;
+    outline: 15px solid rgba(254, 85, 37, 0.5);
+    font-size: 18px;
+}
+section.VideoSection .minicards{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:400px auto 200px auto;
+    flex-wrap: wrap;
+
+}
+.minicards .minicard{
+    margin-inline: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6ae9c95;
+    padding:0.5rem 0rem;
+    border-radius: 30px;
+    width: 200px;
+    height: 100px;
+    position: relative;
+
+}
+.minicard .num{
+    color: #f35525;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.minicard .text{
+    text-align: center;
+    width: 40%;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0  1rem;
+}
+.minicard .circle{
+    height: 50px;
+    width: 50px;
+    background-color: #f35525;
+    position: absolute;
+    top: -20%;
+    right: -10%;
+    border-radius: 50px;
+}
+@media screen and (max-width:992px) {
+    .video-frame a{
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+        line-height: 36px;
+        position: absolute;
+        left: 79%;
+        top: 40%;
+        transform: translate(-10%,-10%);
+    }
+    section.VideoSection .minicards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 200px auto;
+        
+    }
+    .minicards .minicard{
+        margin-top: 50px;
+    }
+}

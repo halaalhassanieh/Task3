@@ -1,0 +1,127 @@
+/* #f35525 */
+
+nav.NavBar ul ,
+.nav-menu ul {
+    list-style: none;
+    
+}
+
+
+nav.NavBar ul li{
+    display: inline-block;
+    padding: 5px 30px ;
+    
+
+}
+
+nav.NavBar ul li .navItems ,
+.nav-menu ul li .navItems{
+    font-family: Arial, Helvetica, sans-serif !important;
+    transition: 0.5s all;
+    text-decoration :none ;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+}
+nav.NavBar ul li .navItems:hover{
+color: #f35525;
+}
+.nav-menu ul li .navItems:hover{
+    color: #f35525;
+}
+div nav.NavBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 85vw;
+    height: 80px;
+
+}
+
+div nav.NavBar div{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    
+}
+div nav.NavBar div .schedule,
+.nav-menu .schedule{
+background-color: black;
+color: white;
+padding:0px 18px 0px 0px ;
+border-radius: 50px;
+cursor: pointer;
+font-size: 0.9rem;
+
+}
+ div nav.NavBar div .schedule span ,
+ .nav-menu .schedule span{
+    background-color: #f35525;
+    height: 40px;
+    width: 40px;
+    font-size: 1rem;
+    border-radius: 50% ;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+    margin-left: -1px;
+    
+      } 
+
+div nav.NavBar button.bars {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    display: none;
+}
+
+
+.nav-menu{
+    z-index: 1;
+    width: 85vw;
+    position: relative;
+    transform: translate(-50%,10%);
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+     gap: 20px;
+     padding: 20px 30px;
+     display: none;
+     transition: all 0.5s ease-in-out;
+     
+}
+.nav-menu ul{
+    display: flex;
+    flex-direction: column;
+     gap: 20px;
+}
+
+@media screen and (max-width:992px) {
+    div nav.NavBar button.bars {
+        background-color: transparent;
+        border: none;
+        font-size: 1.5rem;
+        display: block;
+        cursor: pointer;
+    }
+
+    nav.NavBar ul li .navItems ,
+    div nav.NavBar div .schedule 
+    {
+        display: none;
+    }
+    .nav-menu.active{
+        display: flex;
+        transition: all 0.5s ease-in-out;
+        position: absolute;
+       top: 10%;
+       left:50%;
+       transform: translate(-50%,10%);
+       cursor: pointer;
+    }
+}

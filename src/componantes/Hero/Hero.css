@@ -1,0 +1,55 @@
+div.hero div span{
+
+    color: #f35525;
+
+}
+
+div.hero div{
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.795);
+  width: 35%;
+  padding: 8px 10px;
+  font-weight: 500;
+ 
+}
+
+div.hero{
+    width: 30%;
+    z-index: 1;
+    position: absolute;
+    top:40% ;
+    left: 20%;
+    transition: all 0.5s ease;
+}
+
+div .hero h1{
+    color: rgba(255, 255, 255, 0.884);
+    font-size: 3rem;
+    margin-top: 15px;
+    transition: all 0.5s ease;
+
+}
+@media screen and (max-width: 992px)
+ {
+    div .hero h1{
+    font-size : 2rem;
+}
+div.hero{
+    /* width: 30%; */
+    z-index: 1;
+    position: absolute;
+    top:50% ;
+    left: 30%;
+}
+div.hero div{
+    width: 70%;
+    padding: 5px 15px;
+    font-weight: 500;
+   
+}
+}
+
+

@@ -1,0 +1,92 @@
+
+div.featured {
+ margin: 100px auto;
+ /* height: 100vh; */
+ display: flex;
+ justify-content:center;
+ align-items: center;
+ width: 100% ;
+
+}
+
+ @media screen and (max-width:992px) {
+    div.featured{
+         display: flex !important;
+        flex-direction: column !important;
+         margin: 20px;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+    div.featured .sideImgContainer{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        position: relative;
+        width: 30%;
+        height: 300px;
+        margin-bottom: 20px;
+        
+    }
+    div.featured .sideImgContainer  .iconContainer{
+        position: absolute !important;
+        top: 88% !important;
+        left: -70% !important;
+        width: 50% !important;
+    }
+    div.featured .accordionSection{
+        width: 70% !important;
+        margin-top: 30px;
+        
+    }
+
+ }
+
+    
+
+div.featured .sideImgContainer{
+
+    /* padding-left: 55px; */
+    width: 30%;
+    height: 500px;
+    position: relative;
+    
+}
+
+div.featured .sideImgContainer .featuredIcon{
+    padding: 15px 5px ;
+    
+}
+div.featured .sideImgContainer  .iconContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 20%;
+    margin: auto;
+    background-color: #f35525;
+    border-radius: 50%;
+    position: absolute;
+    top: 88%;
+    left: 7%;
+    
+    
+
+    
+}
+div.featured .accordionSection{
+    width: 30%;
+    height: auto;
+}
+div.featured .FeaturedCardBox{
+    padding: 2px 2px 0px 5px;
+ border: 1px solid rgba(165, 161, 161, 0.922);
+ box-shadow: 0px 0px 7px #666;
+
+}
+
+div.featured .FeaturedCardBox hr{
+    margin: 0;
+    padding: 0;
+    width: 99%;
+}
